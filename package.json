@@ -4,7 +4,7 @@
   "description": "nextjs 없이 SSR",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "esbuild src/client.tsx --outdir=dist --bundle"
   },
   "author": "",
   "license": "ISC",
