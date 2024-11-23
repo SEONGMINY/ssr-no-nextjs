@@ -9,3 +9,6 @@ yarn-error.*
 # macOS
 .DS_Store
 *.pem
+
+# build 파일
+dist/
