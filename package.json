@@ -4,7 +4,8 @@
   "description": "nextjs 없이 SSR",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild src/client.tsx --outdir=dist --bundle"
+    "build": "esbuild src/server.tsx --outdir=dist --bundle --jsx=automatic --platform=node & esbuild src/client.tsx --bundle --outdir=public --platform=browser",
+    "start": "node dist/server.js"
   },
   "author": "",
   "license": "ISC",
